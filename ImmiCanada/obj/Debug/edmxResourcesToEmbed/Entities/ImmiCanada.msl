@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ImmiCanadaModelStoreContainer" CdmEntityContainer="ImmiCanadaEntities">
+    <EntitySetMapping Name="Services">
+      <EntityTypeMapping TypeName="ImmiCanadaModel.Service">
+        <MappingFragment StoreEntitySet="Service">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Member" ColumnName="Member" />
+          <ScalarProperty Name="ServiceFee" ColumnName="ServiceFee" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="ServiceType" ColumnName="ServiceType" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

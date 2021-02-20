@@ -6,20 +6,22 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ServiceListComponent } from './components/service-list/service-list.component';
+import { IndexComponent } from './components/index/index/index.component';
 
 @NgModule({
   declarations: [
       AppComponent,
       ServiceListComponent,
+      IndexComponent,
   ],
   imports: [
       CommonModule,
       BrowserModule,
       FormsModule,
       RouterModule.forRoot([
-          { path: '', redirectTo: 'login', pathMatch: 'full' },
-          //{ path: 'home', component: HomeComponent },
-          { path: '**', redirectTo: 'login' }
+          { path: '', redirectTo: 'index', pathMatch: 'full' },
+          { path: 'index', component: IndexComponent },
+          { path: '**', redirectTo: 'index' }
       ])
   ],
   bootstrap: [AppComponent]
